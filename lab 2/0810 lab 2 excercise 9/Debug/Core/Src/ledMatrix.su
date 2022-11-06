@@ -1,0 +1,7 @@
+ledMatrix.c:14:6:shiftLeftMatrixUpdate	16	static
+ledMatrix.c:26:6:updateRowIn	24	static
+ledMatrix.c:42:6:updateCol	16	static
+ledMatrix.c:90:6:offAllRow	16	static
+ledMatrix.c:98:6:onAllRow	16	static
+ledMatrix.c:106:6:onAllCol	16	static
+ledMatrix.c:114:6:offAllCol	16	static

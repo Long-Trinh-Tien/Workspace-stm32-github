@@ -1,0 +1,3 @@
+timerforled.c:15:6:setTimer1	16	static
+timerforled.c:21:5:getFlag	4	static
+timerforled.c:26:6:timerRun	4	static
