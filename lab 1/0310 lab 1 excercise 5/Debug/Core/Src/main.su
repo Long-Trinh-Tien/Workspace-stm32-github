@@ -1,0 +1,14 @@
+main.c:65:6:StartTheLight	8	static
+main.c:77:6:vertical_GreenLightOn	8	static
+main.c:89:6:vertical_GreenLightOff	8	static
+main.c:96:6:vertical_YellowLightOn	8	static
+main.c:107:6:vertical_YellowLightOff	8	static
+main.c:114:6:horizontal_GreenLightOn	8	static
+main.c:125:6:horizontal_GreenLightOff	8	static
+main.c:131:6:horizontal_YellowLightOn	8	static
+main.c:142:6:horizontal_YellowLightOff	8	static
+main.c:153:5:main	8	static
+main.c:238:6:SystemClock_Config	72	static
+main.c:274:13:MX_TIM2_Init	32	static
+main.c:319:13:MX_GPIO_Init	32	static
+main.c:368:6:Error_Handler	4	static,ignoring_inline_asm

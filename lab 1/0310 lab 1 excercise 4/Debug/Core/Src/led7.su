@@ -1,0 +1,2 @@
+led7.c:17:6:LED7_WriteByte	16	static
+led7.c:29:6:display7SEG	16	static

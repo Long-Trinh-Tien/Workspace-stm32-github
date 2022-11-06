@@ -1,0 +1,2 @@
+fsm_button_function.c:13:6:changeButtonStatus	8	static
+fsm_button_function.c:57:6:fsm_button_function	8	static

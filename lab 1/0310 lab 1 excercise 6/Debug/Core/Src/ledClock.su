@@ -1,0 +1,7 @@
+ledClock.c:16:6:LED12_WriteByte	16	static
+ledClock.c:32:6:LED12_Number	16	static
+ledClock.c:36:6:clearAllClock	8	static
+ledClock.c:40:6:LED12_WriteOnByte	16	static
+ledClock.c:56:6:LED12_WriteOffByte	16	static
+ledClock.c:71:6:setNumberOnClock	16	static
+ledClock.c:75:6:clearNumberOnClock	16	static

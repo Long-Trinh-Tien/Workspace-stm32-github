@@ -1,0 +1,6 @@
+button.c:30:6:startAllButton	16	static
+button.c:46:5:isButtonPressed	16	static
+button.c:68:5:isButtonPressed3s	16	static
+button.c:78:6:subKeyProcess	16	static
+button.c:90:6:subKeyPressing3sProcess	16	static
+button.c:96:6:getKeyInput	16	static
