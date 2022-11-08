@@ -14,8 +14,8 @@
 #define	PRESSED_STATE	GPIO_PIN_RESET
 
 int isButtonPressed(int index);
-//int isButtonPressed1s(int index);
-int isButtonPressed3s(int index);
+int isButtonPressed1s(int index);
+//int isButtonPressed3s(int index);
 
 void startAllButton();
 void getKeyInput(void);
