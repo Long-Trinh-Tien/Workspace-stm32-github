@@ -1,4 +1,5 @@
 "./Core/Src/button.o"
+"./Core/Src/fsm_7seg_led.o"
 "./Core/Src/fsm_button_function.o"
 "./Core/Src/global.o"
 "./Core/Src/input_reading.o"

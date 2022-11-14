@@ -64,8 +64,8 @@ all: main-build
 main-build: 0511\ midterm\ exam.elf secondary-outputs
 
 # Tool invocations
-0511\ midterm\ exam.elf: $(OBJS) $(USER_OBJS) E:\Hoc\Workspace\ stm32\0511\ midterm\ exam\STM32F103C6TX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "0511 midterm exam.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m3 -T"E:\Hoc\Workspace stm32\0511 midterm exam\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="0511 midterm exam.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+0511\ midterm\ exam.elf: $(OBJS) $(USER_OBJS) E:\Hoc\Workspace\ stm32\ github\Workspace-stm32-github\0511\ midterm\ exam\STM32F103C6TX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "0511 midterm exam.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m3 -T"E:\Hoc\Workspace stm32 github\Workspace-stm32-github\0511 midterm exam\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="0511 midterm exam.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 
