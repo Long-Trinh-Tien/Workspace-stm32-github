@@ -35,7 +35,7 @@ void startAllButton()
 		{
 			keyReg[i][z]=NORMAL_STATE;
 			button_flag[z]=0;
-//			is_button_pressing_flag[z]=0;
+			is_button_pressing_flag[z]=0;
 			timerForKeyPressed[z]=KEY_PRESS_TIMING;
 			keyPressingTimeInSecond[z]=0;
 		}
@@ -64,16 +64,6 @@ int isButtonPressed1s(int index)
 	return 0;
 }
 
-//check if button is pressed for more than 3s
-//int isButtonPressed3s(int index)
-//{
-//	if(is_button_pressing3s_flag[index]==1)
-//	{
-//		is_button_pressing3s_flag[index]=0;
-//		return 1;
-//	}
-//	return 0;
-//}
 
 void subKeyProcess(int index)
 {
@@ -87,11 +77,6 @@ void subKeyPressingProcess(int index)
 	is_button_pressing_flag[index]=1;
 }
 
-//void subKeyPressing3sProcess(int index)
-//{
-//	//TODO
-//	is_button_pressing3s_flag[index]=1;
-//}
 
 void getKeyInput()//this will go to interrupt
 {
@@ -106,7 +91,6 @@ void getKeyInput()//this will go to interrupt
 	{
 		if(keyReg[3][k]!=keyReg[2][k])//check with last valid state
 		{
-//			keyPressingTimeInSecond[k]=0;//button change state -> reset counting variable
 			keyReg[3][k]=keyReg[2][k];//new state to last state
 			if(keyReg[2][k]==PRESSED_STATE)
 			{
@@ -124,11 +108,6 @@ void getKeyInput()//this will go to interrupt
 				{
 					//TODO
 					subKeyPressingProcess(k);
-//					keyPressingTimeInSecond[k]++;//count time during pressed state
-//					if(keyPressingTimeInSecond[k]>=3)
-//					{
-//						subKeyPressing3sProcess(k);//start from 3s, call every second
-//					}
 					timerForKeyPressed[k]=KEY_PRESS_TIMING;
 				}
 

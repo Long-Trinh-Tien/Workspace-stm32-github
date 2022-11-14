@@ -34,7 +34,7 @@ int LED7_HEX[] = {0xC0, 0xF9, 0xA4, 0xB0, 0x99, 0x92, 0x82, 0xF8, 0x80, 0x90};
 
 void LED7_WriteByte(int b);
 
-void LED7_WriteByte(int b)
+void LED7_WriteByte(int b)//need upgrade
 {
 
 	for (int i=0;i<=6;i++)

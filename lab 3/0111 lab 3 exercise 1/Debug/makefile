@@ -64,8 +64,8 @@ all: main-build
 main-build: 0111\ lab\ 3\ exercise\ 1.elf secondary-outputs
 
 # Tool invocations
-0111\ lab\ 3\ exercise\ 1.elf: $(OBJS) $(USER_OBJS) E:\Hoc\Workspace\ stm32\ github\Workspace-stm32-github\lab\ 3\0111\ lab\ 3\ exercise\ 1\STM32F103C6TX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "0111 lab 3 exercise 1.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m3 -T"E:\Hoc\Workspace stm32 github\Workspace-stm32-github\lab 3\0111 lab 3 exercise 1\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="0111 lab 3 exercise 1.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+0111\ lab\ 3\ exercise\ 1.elf: $(OBJS) $(USER_OBJS) E:\Hoc\Workspace\ stm32\lab3-github\0111\ lab\ 3\ exercise\ 1\STM32F103C6TX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "0111 lab 3 exercise 1.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m3 -T"E:\Hoc\Workspace stm32\lab3-github\0111 lab 3 exercise 1\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="0111 lab 3 exercise 1.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 

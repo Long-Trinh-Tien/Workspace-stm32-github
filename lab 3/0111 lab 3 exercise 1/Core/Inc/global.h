@@ -13,28 +13,30 @@
 #include "main.h"
 #include "stdint.h"
 #include "led7.h"
+#include "fsm_mode_change.h"
+#include "fsm_7seg_led.h"
+#include "fsm_traffic_light.h"
 
-//state of finite state machine
-//#define	INIT		1
-//#define	AUTO_RED	2
-//#define	AUTO_GREEN	3
-//#define	AUTO_YELLOW	4
-//
-//
-//#define MAN_RED		12
-//#define MAN_YELLOW	13
-//#define MAN_GREEN	14
-//
-//
-//#define RED_TIMING		500
-//#define	YELLOW_TIMING	200
-//#define	GREEN_TIMING	300
 
 #define	MODE_BUTTON			0
 #define	TIME_BUTTON			1
 #define	SET_VALUE_BUTTON	2
 
+#define NORMAL_MODE			10
+#define RED_MODE			11
+#define	YELLOW_MODE			12
+#define GREEN_MODE			13
 
-extern int status;
+#define MODE_LED			20
+#define MODE_LED_2			21
+#define SET_VALUE_LED		22
+#define SET_VALUE_LED_2		23
+
+#define	RED_LIGHT			30
+#define	YELLOW_LIGHT		31
+#define	GREEN_LIGHT			32
+
+extern int mode;
+extern int led7SEGindex;
 
 #endif /* INC_GLOBAL_H_ */

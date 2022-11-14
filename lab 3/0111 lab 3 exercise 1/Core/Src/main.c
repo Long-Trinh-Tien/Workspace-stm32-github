@@ -23,6 +23,9 @@
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 #include "global.h"
+#include "fsm_7seg_led.h"
+#include "fsm_mode_change.h"
+#include "fsm_traffic_light.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -89,13 +92,23 @@ int main(void)
   MX_TIM2_Init();
   MX_GPIO_Init();
   /* USER CODE BEGIN 2 */
-
+  HAL_TIM_Base_Start_IT(&htim2);
+  startAllButton();
+  startAllTimer();
+  OffAllLed();
+  offAllTrafficLight();
+  mode=NORMAL_MODE;
+  setTimer(250,2);
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
+
   while (1)
   {
+	  fsm_mode_change();
+	  fsm_7seg_led();
+	  fsm_traffic_light();
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
@@ -198,19 +211,19 @@ static void MX_GPIO_Init(void)
 
   /*Configure GPIO pin Output Level */
   HAL_GPIO_WritePin(GPIOA, RED_HOR_Pin|YELLOW_HOR_Pin|GREEN_HOR_Pin|RED_VER_Pin
-                          |YELLOW_VER_Pin|GREEN_VER_Pin|VER_LED_Pin|VER_LED_2_Pin
-                          |HOR_LED_Pin|HOR_LED_2_Pin, GPIO_PIN_RESET);
+                          |YELLOW_VER_Pin|GREEN_VER_Pin|MODE_LED_Pin|MODE_LED_2_Pin
+                          |SET_VALUE_LED_Pin|SET_VALUE_LED_2_Pin, GPIO_PIN_RESET);
 
   /*Configure GPIO pin Output Level */
   HAL_GPIO_WritePin(GPIOB, PB0_Pin|PB1_Pin|PB2_Pin|PB3_Pin
                           |PB4_Pin|PB5_Pin|PB6_Pin, GPIO_PIN_RESET);
 
   /*Configure GPIO pins : RED_HOR_Pin YELLOW_HOR_Pin GREEN_HOR_Pin RED_VER_Pin
-                           YELLOW_VER_Pin GREEN_VER_Pin VER_LED_Pin VER_LED_2_Pin
-                           HOR_LED_Pin HOR_LED_2_Pin */
+                           YELLOW_VER_Pin GREEN_VER_Pin MODE_LED_Pin MODE_LED_2_Pin
+                           SET_VALUE_LED_Pin SET_VALUE_LED_2_Pin */
   GPIO_InitStruct.Pin = RED_HOR_Pin|YELLOW_HOR_Pin|GREEN_HOR_Pin|RED_VER_Pin
-                          |YELLOW_VER_Pin|GREEN_VER_Pin|VER_LED_Pin|VER_LED_2_Pin
-                          |HOR_LED_Pin|HOR_LED_2_Pin;
+                          |YELLOW_VER_Pin|GREEN_VER_Pin|MODE_LED_Pin|MODE_LED_2_Pin
+                          |SET_VALUE_LED_Pin|SET_VALUE_LED_2_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;

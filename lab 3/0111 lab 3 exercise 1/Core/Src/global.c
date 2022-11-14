@@ -7,7 +7,8 @@
 
 #include "global.h"
 
-int status = 0;//no initial status
+int mode = 0;//no initial mode
+int led7SEGindex = MODE_LED;
 
 
 //led function

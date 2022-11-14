@@ -1,6 +1,6 @@
-Core/Src/global.o: ../Core/Src/global.c ../Core/Inc/global.h \
- ../Core/Inc/timerRun.h ../Core/Inc/main.h \
- ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h \
+Core/Src/fsm_7seg_led.o: ../Core/Src/fsm_7seg_led.c \
+ ../Core/Inc/fsm_7seg_led.h ../Core/Inc/global.h ../Core/Inc/timerRun.h \
+ ../Core/Inc/main.h ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h \
  ../Core/Inc/stm32f1xx_hal_conf.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h \
@@ -25,8 +25,10 @@ Core/Src/global.o: ../Core/Src/global.c ../Core/Inc/global.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h \
  ../Core/Inc/button.h ../Core/Inc/led7.h ../Core/Inc/fsm_mode_change.h \
- ../Core/Inc/global.h ../Core/Inc/fsm_7seg_led.h \
- ../Core/Inc/fsm_traffic_light.h
+ ../Core/Inc/fsm_7seg_led.h ../Core/Inc/fsm_traffic_light.h \
+ ../Core/Inc/led7.h
+
+../Core/Inc/fsm_7seg_led.h:
 
 ../Core/Inc/global.h:
 
@@ -88,8 +90,8 @@ Core/Src/global.o: ../Core/Src/global.c ../Core/Inc/global.h \
 
 ../Core/Inc/fsm_mode_change.h:
 
-../Core/Inc/global.h:
-
 ../Core/Inc/fsm_7seg_led.h:
 
 ../Core/Inc/fsm_traffic_light.h:
+
+../Core/Inc/led7.h:

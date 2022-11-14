@@ -1,4 +1,7 @@
 "./Core/Src/button.o"
+"./Core/Src/fsm_7seg_led.o"
+"./Core/Src/fsm_mode_change.o"
+"./Core/Src/fsm_traffic_light.o"
 "./Core/Src/global.o"
 "./Core/Src/led7.o"
 "./Core/Src/main.o"

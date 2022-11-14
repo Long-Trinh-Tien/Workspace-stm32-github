@@ -1,7 +1,4 @@
-timerRun.c:19:6:setTimer1	16	static
-timerRun.c:24:6:setTimer2	16	static
-timerRun.c:29:6:setTimer3	16	static
-timerRun.c:34:5:isTimer1Done	4	static
-timerRun.c:44:5:isTimer2Done	4	static
-timerRun.c:54:5:isTimer3Done	4	static
-timerRun.c:64:6:timerRun	4	static
+timerRun.c:23:6:startAllTimer	16	static
+timerRun.c:32:6:setTimer	16	static
+timerRun.c:56:5:isTimerDone	16	static
+timerRun.c:106:6:timerRun	16	static
