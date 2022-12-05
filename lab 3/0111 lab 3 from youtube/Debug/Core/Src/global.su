@@ -1,4 +1,0 @@
-global.c:14:6:offAllLight	8	static
-global.c:21:6:startRedLight	8	static
-global.c:28:6:startYellowLight	8	static
-global.c:35:6:startGreenLight	8	static
