@@ -1,0 +1,5 @@
+led_display.c:73:9:update_seven_segment_led_buffer	16	static
+led_display.c:81:6:seven_segment_data_out	24	static
+led_display.c:92:6:clear_previous_seven_segment_led	16	static
+led_display.c:97:13:set_current_seven_segment_led	16	static
+led_display.c:103:6:seven_segment_led_driver	16	static

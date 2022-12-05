@@ -1,0 +1,6 @@
+timer_from_me.c:18:6:Update_System_Status	4	static
+timer_from_me.c:22:6:timer6s	8	static
+timer_from_me.c:39:6:timerHalfSec	4	static
+timer_from_me.c:52:6:timer1s	4	static
+timer_from_me.c:65:6:timer5s	4	static
+timer_from_me.c:78:6:Timer_For_Buzzer	8	static

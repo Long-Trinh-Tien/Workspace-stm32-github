@@ -1,0 +1,10 @@
+16:28:19 **** Incremental Build of configuration Debug for project NEW2-34pm ****
+make -j6 all 
+arm-none-eabi-size   NEW2-34pm.elf 
+   text	   data	    bss	    dec	    hex	filename
+   4536	     20	   1572	   6128	   17f0	NEW2-34pm.elf
+Finished building: default.size.stdout
+ 
+
+16:28:19 Build Finished. 0 errors, 0 warnings. (took 234ms)
+

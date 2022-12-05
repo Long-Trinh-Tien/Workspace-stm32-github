@@ -1,0 +1,4 @@
+timerRun.c:23:6:startAllTimer	16	static
+timerRun.c:32:6:setTimer	16	static
+timerRun.c:56:5:isTimerDone	16	static
+timerRun.c:106:6:timerRun	16	static
